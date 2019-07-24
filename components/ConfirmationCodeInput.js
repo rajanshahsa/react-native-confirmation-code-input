@@ -163,7 +163,11 @@ export default class ConfirmationCodeInput extends Component {
       case 'border-box':
         return _.merge(classStyle, {
           borderWidth: cellBorderWidth,
-          borderColor: (active ? activeColor : inactiveColor)
+          borderColor: (active ? activeColor : inactiveColor),
+          backgroundColor:'rgb(187, 187, 187)',
+          borderRadius: 5,
+
+          
         });
       case 'border-circle':
         return _.merge(classStyle, {
@@ -251,6 +255,7 @@ export default class ConfirmationCodeInput extends Component {
       const id = i;
       codeInputs.push(
         <TextInput
+
           key={id}
           ref={ref => (this.codeInputRefs[id] = ref)}
           style={[
