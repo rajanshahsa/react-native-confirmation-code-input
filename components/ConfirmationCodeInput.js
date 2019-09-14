@@ -164,7 +164,7 @@ export default class ConfirmationCodeInput extends Component {
         return _.merge(classStyle, {
           borderWidth: cellBorderWidth,
           borderColor: (active ? activeColor : inactiveColor),
-          backgroundColor:'rgb(187, 187, 187)',
+          backgroundColor:'rgb(240, 240, 240)',
           borderRadius: 5,
 
           
